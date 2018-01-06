@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#moviesList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 350px;
+    grid-gap: 1em;
+    margin-top:100px;
+    text-align: center;
+    padding: 0 50px;
+    transition: all .5s ease-in-out;
+}
+.moviesDisplay{
+    position: relative;
+    display: grid;
+    grid-template-rows: 70px 40px 40px auto 50px;
+    position: relative;
+}
+.genreDisplay{
+    text-transform: capitalize;
+}
+.genreDisplay:hover,.yearDisplay:hover,.summaryDisplay:hover,.titleDisplay:hover{
+    color: #26A65B;
+}
+.seenSymbol{
+    line-height: .3em;
+    margin: auto;
+    box-shadow: inset 0px 0px 2px 0px #f9eca0;
+    background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+    background-color: #f0c911;
+    border-radius: 29px;
+    border: 2px solid #e65f44;
+    cursor: pointer;
+    color: #c92200;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 16px;;
+    text-decoration: none;
+}
+.moviesCounter{
+    font-weight: bold;    
+}
+#moviesCountersContainer{
+    position:absolute;
+    right:4%;
+    top:0%;
+}
+@media (max-width:1220px){
+    #moviesList{
+        padding: 0;
+        grid-auto-rows: 380px;
+    }
+    .moviesDisplay{
+        grid-template-rows: 90px 40px 40px auto 50px;
+    }
+}
+@media (max-width:920px){
+    #moviesList{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:745px){
+    #moviesList{
+        grid-auto-rows: 400px;
+    }
+    
+}
+@media (max-width:620px){
+    #moviesList{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 350px;
+    }
+    .moviesDisplay{
+        grid-template-rows: 50px 40px 40px auto 50px;
+    }
+}
+@media (max-width:525px){
+    #moviesList{
+        grid-auto-rows: 400px;
+    }
+    .moviesDisplay{
+        grid-template-rows: 80px 40px 40px auto 50px;
+    }
+}
