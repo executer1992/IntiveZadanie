@@ -13,10 +13,8 @@ body{
     transition: all .5s ease-in-out;
 }
 .moviesDisplay{
-    position: relative;
     display: grid;
     grid-template-rows: 70px 40px 40px auto 50px;
-    position: relative;
 }
 .genreDisplay{
     text-transform: capitalize;
