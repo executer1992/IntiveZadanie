@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Intive Zadanie</title>
+</head>
+<body>
+    <div class="navigate">
+        <a href="index.html">Go to Your movie list</a>
+    </div>  
+    <div id="moviesCountersContainer">
+        <p>All: <span class="moviesCounter" id="anotherMoviesCounterAll"></span></p>
+        <p>Viewed: <span class="moviesCounter" id="anotherMoviesCounterSeen"></span></p>
+    </div>
+    <div id="formContainer">
+        <form class="form-movie">
+            <h1 class="form-header">Use this form below to add a new movie</h1>
+            <ul>
+                <li>
+                    <label for="tittle">Movie Tittle</label>
+                    <input id="tittle" type="text" name="name" maxlength="100">
+                    <span>Enter your movie tittle here</span>
+                </li>
+                <li>
+                    <label for="year">Year</label>
+                    <input id="year" type="text" name="productionYear" maxlength="100">
+                    <span>Enter the production year of your movie</span>
+                </li>
+                <li>
+                    <label for="genre">Film Genre</label>
+                    <input id="genre" type="text" name="category" maxlength="100">
+                    <span>What film genre is your movie?</span>
+                </li>
+                <li>
+                    <label for="summary">About Your Movie</label>
+                    <textarea id="summary" name="description" ></textarea>
+                    <span>Say something about your movie</span>
+                </li>
+                <li>
+                    <label for="seen">Did you seen it?</label>
+                    <input type="radio" name="ifView" value="T" checked>Yes
+                    <input type="radio" name="ifView" value="F">No
+                    
+                </li>
+                <li>
+                    <button type="submit"  id="createData">Send This</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script src="src/addBundle.js" type="module"></script>
+
+</body>
+</html>

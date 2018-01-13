@@ -1,0 +1,23 @@
+{
+  "name": "modularyzacja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/executer1992/IntiveZadanie.git"
+  },
+  "author": "filip ilioski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/executer1992/IntiveZadanie/issues"
+  },
+  "homepage": "https://github.com/executer1992/IntiveZadanie#readme",
+  "devDependencies": {
+    "rollup": "^0.53.3"
+  }
+}
